@@ -19,6 +19,12 @@ body {
   justify-content: stretch;
   align-items: flex-center;
 }
+.image-sml {
+  width: 2.5em;
+  border-radius: 50%;
+  border-color: #2000ff;
+  border-style: solid;
+}
 
 .intro {
   text-align: center;
@@ -30,9 +36,6 @@ body {
   border-color: #2000ff;
   margin: 2%;
 }
-
-/* .image1 {
-} */
 
 .container2 {
   width: 90%;
@@ -48,7 +51,6 @@ body {
 
 .heading2 {
   color: #2000ff;
-  font-size: 4vmax;
   text-align: center;
 }
 
