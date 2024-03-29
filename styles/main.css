@@ -89,6 +89,11 @@ body {
   margin-left: 2.5%;
 }
 
+.da {
+  color: #9f838c;
+  font-weight: bolder;
+}
+
 .home-button {
   text-align: center;
   color: #4e5340;
