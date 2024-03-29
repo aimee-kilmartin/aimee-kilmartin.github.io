@@ -14,12 +14,10 @@ body {
 
 .container1 {
   width: 100%;
-  height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
   align-items: flex-center;
-  margin-bottom: 5em;
 }
 
 .intro {
