@@ -1,12 +1,12 @@
 body {
-  background-color: rgb(168, 202, 254);
+  background-color: #ffeeda;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 .heading1 {
   max-height: 15vh;
-  color: #fff;
+  color: #9f838c;
   text-align: center;
   padding: 1.5vh;
   margin: 1vw;
@@ -22,18 +22,18 @@ body {
 .image-sml {
   width: 2.5em;
   border-radius: 50%;
-  border-color: #2000ff;
+  border-color: #70a0af;
   border-style: solid;
 }
 
 .intro {
   text-align: center;
-  color: #fff;
+  color: #70a0af;
   padding: 1%;
   border: 5pt;
   border-bottom-style: groove;
   border-top-style: groove;
-  border-color: #2000ff;
+  border-color: #9f838c;
   margin: 2%;
   background-image: url('/images/image-sunset-4.jpg');
   background-position: center;
@@ -54,12 +54,12 @@ body {
 }
 
 .heading2 {
-  color: #2000ff;
+  color: #70a0af;
   text-align: center;
 }
 
 .main-text {
-  color: #000;
+  color: #4e5340;
   text-align: center;
 }
 
@@ -67,12 +67,12 @@ body {
   width: 55vw;
   min-width: 100px;
   max-width: 700px;
-  background-color: #fff;
+  background-color: #fad3a5;
   padding: 1em 2em;
   border-width: 6px;
   border-style: double;
   border-radius: 10px;
-  border-color: #1c0284;
+  border-color: #70a0af;
   margin-right: 2.5%;
 }
 
@@ -80,23 +80,24 @@ body {
   width: 25vw;
   min-width: 100px;
   max-width: 500px;
-  background-color: #fff;
+  background-color: #fad3a5;
   padding: 1em 2em;
   border-width: 6px;
   border-style: double;
   border-radius: 10px;
-  border-color: #1c0284;
+  border-color: #70a0af;
   margin-left: 2.5%;
 }
 
 .home-button {
   text-align: center;
-  border: 3pt;
+  color: #4e5340;
+  background-color: #fad3a5;
+  border: pt;
   border-style: solid;
-  border-color: #200000;
+  border-color: #70a0af;
   border-radius: 10%;
   position: fixed;
-  position: absolute;
   right: 2%;
   bottom: 1%;
   width: 80px;
