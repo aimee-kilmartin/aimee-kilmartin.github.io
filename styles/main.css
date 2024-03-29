@@ -35,6 +35,10 @@ body {
   border-top-style: groove;
   border-color: #2000ff;
   margin: 2%;
+  background-image: url('/images/image-sunset-4.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .container2 {
