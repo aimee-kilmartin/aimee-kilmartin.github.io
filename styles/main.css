@@ -43,7 +43,6 @@ body {
 
 .container2 {
   width: 90%;
-  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -51,15 +50,19 @@ body {
   padding-right: 5%;
   height: min-content;
   margin-top: 1%;
+  color: #4e5340;
+  text-align: center;
 }
 
 .heading2 {
   color: #70a0af;
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.main-text {
-  color: #4e5340;
+.heading3 {
+  color: #70a0af;
   text-align: center;
 }
 
@@ -72,12 +75,24 @@ body {
   border-width: 6px;
   border-style: double;
   border-radius: 10px;
-  border-color: #70a0af;
+  border-color: #4e5340;
   margin-right: 2.5%;
+  color: #4e5340;
 }
 
+.center {
+  width: 90vw;
+  min-width: 100px;
+  background-color: #fad3a5;
+  padding: 1em 2em;
+  border-width: 6px;
+  border-style: double;
+  border-radius: 10px;
+  border-color: #4e5340;
+  color: #4e5340;
+}
 .right {
-  width: 25vw;
+  width: 30vw;
   min-width: 100px;
   max-width: 500px;
   background-color: #fad3a5;
@@ -85,8 +100,9 @@ body {
   border-width: 6px;
   border-style: double;
   border-radius: 10px;
-  border-color: #70a0af;
+  border-color: #4e5340;
   margin-left: 2.5%;
+  color: #4e5340;
 }
 
 .da {
@@ -100,12 +116,56 @@ body {
   background-color: #fad3a5;
   border: pt;
   border-style: solid;
-  border-color: #70a0af;
+  border-color: #4e5340;
   border-radius: 10%;
   position: fixed;
   right: 2%;
   bottom: 1%;
   width: 80px;
+}
+
+.container3 {
+  width: 90%;
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: min-content;
+  /* margin-bottom: 70px; */
+}
+
+.container4 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: min-content;
+  margin-top: 1%;
+  color: #4e5340;
+  text-align: center;
+  margin-bottom: 40pt;
+}
+
+table {
+  overflow-x: scroll;
+}
+table,
+th,
+td {
+  border-style: double;
+  border-collapse: collapse;
+  text-align: center;
+  border-width: 4px;
+  border-radius: 10px;
+  border-color: #4e5340;
+  padding: 2pt;
+  color: #4e5340;
+}
+
+th {
+  color: #4e5340;
+  background-color: #fad3a5;
 }
 
 @media (min-width: 600px) {
@@ -119,7 +179,13 @@ body {
     font-size: 3vmin;
   }
   .container2 {
-    font-size: 2.5vmin;
+    font-size: 3vmin;
+  }
+  .container3 {
+    font-size: 3vmin;
+  }
+  .container4 {
+    font-size: 3vmin;
   }
 }
 @media (max-width: 599px) {
@@ -133,6 +199,13 @@ body {
     font-size: 3vmin;
   }
   .container2 {
-    font-size: 2vmin;
+    font-size: 2.5vmin;
+  }
+
+  .container3 {
+    font-size: 2.5vmin;
+  }
+  .container4 {
+    font-size: 2.5vmin;
   }
 }
