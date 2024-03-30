@@ -26,6 +26,12 @@ body {
   border-style: solid;
 }
 
+.image-screen {
+  width: 95%;
+  border-color: #70a0af;
+  border-style: solid;
+}
+
 .intro {
   text-align: center;
   color: #70a0af;

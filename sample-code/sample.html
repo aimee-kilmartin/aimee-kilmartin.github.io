@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Code</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/docsample.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!--STATIC-->
+    <p>
+      Static: This is the default type of positioning that all HTML elements
+      receive, each element runs in order from top to bottom.
+    </p>
+
+    <div class="static">This elements position is static.</div>
+
+    <!--RELATIVE-->
+    <p>
+      Relative: This will position an element relative to its 'static' place,
+      retaining the order of the document.
+    </p>
+
+    <div>
+      <div class="relative-a">
+        This elements position is relative.
+        <div class="absolute-a">Static original place.</div>
+      </div>
+    </div>
+
+    <!--ABSOLUTE-->
+    <p>
+      Absolute: These elements are positioned by a value in relation to another
+      element (often a parent element).
+    </p>
+
+    <div class="relative-b">
+      This elements position is relative.
+      <div class="absolute-b">This elements position is absolute.</div>
+    </div>
+
+    <!--FIXED-->
+    <p>
+      Fixed: This type of element is positioned relative to the viewport. It
+      always stays in the same place regardless of the page being scrolled.
+    </p>
+
+    <div class="fixed">This elements position is fixed.</div>
+
+    <div class="text">This is a placeholder for scrolling</div>
+  </body>
+</html>
