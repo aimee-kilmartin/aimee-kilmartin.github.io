@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Concepts: Positioning</title>
+    <meta charset="UTF-8" />
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1 class="heading1">
+      What are the differences between relative, absolute, and fixed positioning
+      in CSS?
+    </h1>
+    <h2 class="intro">
+      <em>CSS Concepts</em>
+      <p>Technical Blog Investigating the Concept of CSS Positioning</p>
+    </h2>
+    <div class="container2">
+      <div class="left">
+        <h2 class="heading2">Positioning Types</h2>
+        <h3 class="heading3">Static</h3>
+        <div class="main-text">
+          <p>This is the default type of positioning that all HTML elements receive, until otherwise specified with one of the positioning attributes detailed below.</p>
+          <p>The static position puts the element in the document page based on where the element is sitting amongst the HTML code - this runs in order from top to bottom just like reading these paragraphs here.</p>
+        </div>
+        <h3 class="heading3">Relative</h3>
+        <div class="main-text">
+          <p>Relative positioning is similar to static positioning - the element will be positioned relatively to its original location when it was a static element. The element still retains its place in the order of the document, however you can force the element in a direction or directions from its default position.</p>
+          <p>This can be controlled by the properties of: top, right, bottom, and left which will move the element X amount from the direction specified.</p>
+          <p>So left:20px will move the element 20 pixels from the left (so will appear as moved to the right).</p>
+        </div>
+        <h3 class="heading3">Absolute</h3>
+        <div class="main-text">
+          <p>The Absolute positioning removes the element from the normal layout of surrounding (static or relative) elements. The absolute element then behaves as if it is on its own layer, appearing closer to the viewer than the other elements. As it is on a different layer, it can overlap other elements without affecting them.</p>
+          <p>Using the properties of: top, right, bottom, and left will move the element X distance from the edge of the containing (parent) element. </p>
+          <p>So if an absolute element has a property of right:50px it will show on the page 50 pixels away from the right hand side of the element it is contained in. </p>
+          </div>
+        <h3 class="heading3">Fixed</h3>
+        <div class="main-text">
+          <p>Fixed positioning works in a similar way to absolute positioning as it is removed from the normal layout into its own layer. However the key difference between them is that absolute positioning places an element X away from its containing element, whereas fixed positioning places the element X away from the edge of the browser window or viewport.</p>
+          <p>This means that the fixed element can have the property top:50px in which the element will stay 50 pixels down from the top of the visible area of the page. It stays in the same place regardless of how far down the page the user has scrolled. </p>
+        </div>
+      </div>
+          <div class="right">
+            <h2 class="heading2">Terminology</h2>
+            <h3 class="heading3">Element</h3>
+            <div>
+              <p>Item, section of code</p>
+            </div>
+            <h3 class="heading3">Viewport</h3>
+            <div>
+              <p>The viewport is, in simple terms, the visible screen.</p>
+              <p>With many different types of devices commonly used, webpages need to adapt to the different sizes and ratios so viewers can use the same website on their phone, tablet or laptop with ease.</p>
+            </div>
+            <h3 class="heading3">Units</h3>
+            <div>
+              <p>The are many different units that can be used - I have used pixels in the examples here but there are many other types available in CSS</p>
+              <p>Fixed units are the same size regardless of the viewport, and relative units are scalable dependant on the viewport</p>
+            </div>
+            <h3 class="heading3">Containing Elements</h3>
+          <p>The containing element of the absolute element being modified is the nearest parent element with the positioning type:relative. If there is no parent relative element, the containing element will default to the first parent static element of the block of code</p>
+        </div>
+        </div>
+      </div>
+      <div class="container3">
+        <div class="table">
+          <table>
+            <tr>
+              <th>Type</th>
+              <th>Relative</th>
+              <th>Absolute</th>
+              <th>Fixed</th>
+            </tr>
+            <tr>
+              <td>Positioned from</td>
+              <td>Original point of the element within the document</td>
+              <td>Containing element</td>
+              <td>Viewport edge</td>
+            </tr>
+            <tr>
+              <td>On its own layer?</td>
+              <td>No</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Often used for:</td>
+              <td>Visual layout of blocks of content - fine tuning</td>
+              <td>Pop-ups menus, tooltips, or complex layers</td>
+              <td>Headings or navigation bars that need to remain in one place</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    <a href="https://aimee-kilmartin.github.io/" class="home-button">Home</a>
+  </body>
+</html>
