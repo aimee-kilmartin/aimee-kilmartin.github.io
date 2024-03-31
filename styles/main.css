@@ -32,6 +32,14 @@ body {
   border-style: solid;
 }
 
+.image-large {
+  width: 95%;
+  border-color: #70a0af;
+  border-style: solid;
+  border-radius: 5%;
+  border-width: 4pt;
+}
+
 .intro {
   text-align: center;
   color: #70a0af;
