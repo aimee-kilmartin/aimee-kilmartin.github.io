@@ -188,6 +188,13 @@ th {
   color: #9f838c;
 }
 
+.center-list {
+  text-align: center;
+  justify-content: none;
+  color: #9f838c;
+  display: inline-block;
+}
+
 .list-header {
   font-weight: 700;
 }
