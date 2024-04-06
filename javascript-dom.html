@@ -47,7 +47,7 @@
         <p>
           The DOM stands for Document Object Model. It is a programming
           interface which translates programming languages such as HTML and CSS
-          into objects so that other languages such as JAvascript can interpret
+          into objects so that other languages such as Javascript can interpret
           it
         </p>
         <p>
@@ -60,7 +60,7 @@
           hierarchy.
         </p>
         <p>
-          <ul>
+          <ul class="left-list">
             <li>The document is the name for the web page</li>
             <li>
               The object is the content of the webpage - content being the broad
@@ -78,7 +78,7 @@
           The DOM can be interacted with directly on a webpage in the browser -
           this will change the local version of the site. It can also be
           interacted with from the code editor - whilst writing Javascript, it
-          is a good habit to use the command console.log(function) regularly.
+          is a good habit to use the command <span class="code-inline">console.log(function)</span> regularly.
         </p>
         <p>
           This will run the function in the console log part of the DOM,
@@ -95,7 +95,7 @@
         <p>Control Flow is the order in which the Javascript is processed. The general way in this works is from top to bottom - BUT there are many things that can interrupt this.</p>
           <h4 class="heading3">The control flow is like emptying a dishwasher. </h4>
           <p class="list-header">The majority of the Javascript runs as such:</p>
-          <ul>
+          <ul class="left-list">
             <li>Open the dishwasher when it is clean</li>
             <li>Take cups out, put in the cupboard</li>
             <li>Take large bowls out, stack, and put in the cupboard</li>
@@ -104,13 +104,13 @@
           <p>And so on and so on..</p>
         <p>Then you come across a loop - in Javascript this is literally called a loop, but also if I find a dirty plate amongst the clean load of dishes, it throws me for a loop! The <span>take small plates out</span> step is now interrupted because two small plates are DIRTY. If the item is clean it is put away. Else <span>ALERT!! DIRTY ITEM!!</span></p>
         <p class="list-header">Javascript interpretation of the loop:</p>
-        <ol>
+        <ol class="left-list">
           <li>The loop starts with the counter at <span>0 dishes washed</span></li>
           <li>It will continue looping until the counter of dirty dishes washed is equal to the number or dirty dishes there were to begin with (2)</li>
           <li>After each loop the counter will increase by one to record that loop as complete</li>
         </ol>
         <p>The instructions of what to do during the loop are processed between steps 2 and 3, but are written below the loop (against the standard control flow in itself!):</p>
-          <ol>
+          <ol class="left-list">
             <li>Put the dish in the sink</li>
             <li>Turn on the tap to hot water at a medium pressure</li>
             <li>Add dish soap to the scrubber</li>
@@ -119,7 +119,7 @@
             <li>Place dish in the rack to dry off</li>
             </ol>
             <p class="list-header">Is there another dirty dish? Yes, repeat the loop</p>
-            <ol>
+            <ol class="left-list">
               <li>No, turn off the tap and put down the scrubber</li>
               <li>Dry hands</li>
             </ol>
@@ -132,23 +132,31 @@
           What is the Difference between Accessing Data from Arrays and Objects?
         </h3>
         <p>Arrays and Objects are structured differently, and therefore need to be accessed differently. First of all; what are arrays and what are objects?</p>
+        <h3 class="sub-header">Arrays</h3>
         <p>Arrays are a list of Elements (items) - this is commonly used for number values, but can also be a list of things with just one data point (ie ‘Banana’, with no other information needed). Each element in the array will be assigned a value from left to right, starting with <span>0.</span></p>
-        <p class="code">Let freshFood = [Banana, Broccoli]
-          [0]		[1]</p>
-        <p>Objects are similar to arrays however they can have multiple data points. Each object will contain one or more property (also known as ‘key pairs’) which have a key name and a value</p>
-        <p class="code">Let banana = {
-          Colour: Yellow
-          Type: Fruit
-          Price: 1.50
-          }
-          
-          Let broccoli = {
-          Colour: Green
-          Type: Vegetable
-          Price: 2.50
-          }
-          </p>
-          <p>Accessing the data:</p>
+        <ul class="code center-list">
+          <li>Let freshFood = [Banana, Broccoli]</li>
+          </ul>
+          <p>In this example, Banana is assigned the value <span class="code-inline">[0]</span> and Broccoli is assigned the value <span class="code-inline">[1]</span></p>
+          <h3 class="sub-header">Objects</h3>
+          <p>Objects are similar to arrays however they can have multiple data points. Each object will contain one or more property (also known as ‘key pairs’) which have a key name and a value</p>
+        <div>
+          <ul class="code center-list">
+            <li></li>
+            <li>Let banana = {</li>
+            <li>Colour: Yellow</li>
+            <li>Type: Fruit</li>
+            <li>Price: 1.50</li>
+            <li>}</li>
+            <br>
+            <li>Let broccoli = {</li>
+            <li>Colour: Green</li>
+            <li>Type: Vegetable</li>
+            <li>Price: 2.50</li>
+            <li>}</li>
+            </ul>
+        </div>
+          <h3 class="sub-header">Accessing the data:</h3>
           <p>As the elements within an array are defined by their index number, this is what is used to call the data. So using console.log(freshFood[1]) will call the element Broccoli into the console
             </p>
             <p>The properties in an object are accessed using object.key in a function. So console.log(banana.type will result in “an output of Fruit”</p>
@@ -159,11 +167,11 @@
         <h3 class="heading2">What are Functions and why are they useful?</h3>
         <p>Functions are a group of actions that are stored within a name created by the programmer.Then this name of  the function can be used to call (run) the function at any point in the script, or they can be used in other functions later on by inputting the name of the function, rather than repeating the whole set of actions.</p>
         <p>The benefits of this are consistency, changeability, readability</p>
-        <p class="sub-head">Consistency</p>
+        <p class="sub-header">Consistency</p>
         <p>Each time a function is called it will be called <span>the same</span>> as it is running off the same piece of code. This also reduces errors as the same groups of code aren’t typed out repeatedly throughout the Javascript file</p>
-        <p class="sub-head">Changeability</p>
+        <p class="sub-header">Changeability</p>
         <p>If a function is to run X of Y, and this needs to be updated to X of Z in the future, this is easily done in the one original function. Because the future mentions of this function all run from the original one, they don’t need to be updated </p>
-        <p class="sub-head">Readability</p>
+        <p class="sub-header">Readability</p>
         <p>Calling a function by a name eg makeXintoY is a short span of text, rather than inputting a block of code into other blocks of code. This not only makes the code shorter and more concise, but someone looking at the code will know what that piece of a function does (roughly) by it’s name and be able to search for other instances of that function being called within the script</p>
       </div>
     </div>
