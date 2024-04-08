@@ -40,6 +40,15 @@ body {
   border-width: 4pt;
 }
 
+.image-square {
+  width: 18%;
+  max-width: 1852px;
+  border-color: #70a0af;
+  border-style: solid;
+  border-width: 2pt;
+  margin: 1%;
+}
+
 .intro {
   text-align: center;
   color: #70a0af;
