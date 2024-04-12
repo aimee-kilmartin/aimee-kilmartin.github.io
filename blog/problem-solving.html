@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Problem Solving</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/styles/main.css" rel="stylesheet" type="text/css">
+        <title>HTML Template</title>
+    </head>
+    <body>
+      <h1 class="heading1">Technical Blog: Problem Solving</h1>
+    <h2 class="intro">
+      <em>Discussion and stories on problem solving techniques</em>
+      <p>How have I used them this week?</p>
+    </h2>
+    <h2 class="heading2">Problem Solving Stories</h2>
+    <div class="container2">
+      <div class="center">
+        <h3 class="heading3">When I was blocked on a simple problem:</h3>
+          <p>In the latest Javascript section, one of the tasks we needed to write code for was about manipulating objects (sets of information). This is set up where the code tests are already written - if the code does not produce the answer it is looking for the test will show as failed until the answer is correct. </p>
+          <p>I was stuck on how to add the object for ‘ben’ to another object, terah, so as to have ben listed as one of her children - this appears as an object within an object.  I was trying to create a function that adds the children section to terah and then the ben object to the children section, and then write another section to add ben’s name - and just not getting anything working.</p>
+          <p></p>
+          <p>To problem solve this I did some ‘trying things’ - basically changing one thing to see what it did, changing another thing and so on. I also used google, but was ending up more and more confused the more information I looked at. </p>
+          <p>Then I took a step back and had a small break. I was doing this mid afternoon which is not my most functioning time - but I’d had work that morning so needed to use the afternoon hours for coursework. When I came back to it I rubber ducked through the whole file, and realised that If I created the ben object, I could then simply add the object to the already created terah’s children object just like I had with the earlier questions - and didn't need a complicated function or method to do so.</p>
+          <p>Throughout this process I felt super frustrated and stressed!! I was over-complicating it and felt like it should be a simple solution but just wasn’t getting it. I struggle to put things down if they aren’t complete or right - so stepping away is hard. I felt pretty defeated by the time I took a break, but was determined to give it another shot before asking for help.</p>
+          <p>When I got the test passing I felt a combination of relief and dumb - should’ve figured that out sooner, why didn’t I know that, how am I going to get through the rest of these if I can’t do this etc</p>
+          <p>Throughout this I learnt some valuable lessons. The most stand out of these are:
+            <ul>
+              <li>Take into account what is already done/written - if it exists it doesn’t need to be recreated!</li>
+              <li>Google can make things harder - search wisely</li>
+              <li>If I’m frustrated I won’t be thinking as clearly, take a breath and refocus</li>
+              <li>A simple approach can still get things done</li>
+            </ul>
+          </p>
+        <h3 class="heading3">When I elegantly solved a problem:</h3>
+          <p>On another task that got me stumped I handled it a bit better than the previous one. This task was called Fizzbuzz - I needed to take some numbers, and depending on what the number was divisible by return different words. I had the correct calculations for (divide by 3) and (divide by 5) however the test was not passing for (divisible by 3 and 5/divisible by 15). I had written them in this order as it is a default to go from smallest to largest.</p>
+          <p>To problem solve this I used the rubber ducky method and trying alternatives - both while breaking the problem into small chunks.</p>
+          <p>I talked it through to myself, and tried each piece of code individually (commenting out the other two and updating the else/if statements to just work on one piece at a time). I confirmed that each piece worked individually as it should. So why was the %15 not working?</p>
+          <p>I realised that by being the last piece of code, and because of the values involved any number that would be captured by that code would already have been captured by the first piece, %3, at which point the function is complete and further statements are not checked. Therefore it needed to be the first statement in this function.</p>
+          <p>During this process I felt calm and logical. I worked through the code bit by bit and found a reason for the result I was getting. Even better,  I actually understood why that occurred without looking it up!</p>
+          <p>What I learnt from this is was the benefits of breaking it up and testing each piece individually. This can be vital in figuring out which part is wrong - in this case the parts were correct, just how I’d put them together caused the issue!</p>
+          <p>I realised that just the order of statements can have a big impact on the result and how that happens. That just because an instruction or example might not look like the order is important, or I don’t understand why it’s in that order in the first instance, to trust the process.</p>
+          <p></p>
+        <h3 class="heading3">How confident you feel using each of these problem-solving techniques/processes:</h3>
+          <ul>Pseudocode
+            <li>Semi - I like this but need to learn to do it where the actual code is</li>
+            <li>I also need practice in the order of steps and what each type of step should be - variable, function etc</li>
+          </ul>
+          <ul>Trying something
+            <li>I do this a lot - it is my default along with google. I don’t feel ‘stuck’ until I’ve run out of ideas, and will try new thing after new thing for way too long.</li>
+          </ul>
+          <ul>Rubber ducky method
+            <li>I like this method but tend to avoid saying out loud if people are around but I’m not actually speaking to them directly. I’ll do it in my head which probably doesn’t work as effectively</li>
+          </ul>
+          <ul>Reading error messages
+            <li>Yes if the error message gives some information on where to start looking for my error. ‘Undefined’ is a tough one but I learned that if ‘.push’ is undefined it was because the value before .push was undefined - not the .push itself</li>
+            <li>Sometimes I was basing my code off an example I’d found and had error messages like ‘expected ;’. The test doesn’t give a place in the code for this, but it does show up in VS Code. It was asking me to change => to ; several times and I still don’t know why!</li>
+          </ul>
+          <ul>Console.logging
+            <li>I struggled with this. I asked in discord how to actually see a result of console.log when working with just a javascript file - I could see that others were using it, but I didn’t know how. Research got me trying to use node which I knew we had installed but  1- needed to be quit every time to check the test, quit the test go back to node etc and 2 - just got a bunch of error messages that I didn't understand.</li>
+            <li>After I’d gotten help on where console log printed to, I found it just as hard sometimes to get console log to print something, than it was to fix the code until the test passed. It was useful for some tasks but most of the time I wasn’t getting it to work effectively.</li>
+          </ul>
+          <ul>Googling
+            <li>I do a lot of this. It’s one of my first go to’s after I’ve tried a few ideas just from my head, but getting the right information isn’t always easy. It’s often in simple blocks just with let or const statements that I struggle to convert the idea to the function I’m doing. I eventually get there but it takes some time.</li>
+            <li></li>
+          </ul>
+          <ul>Asking your peers for help
+            <li>I have two parts to this - having my cousin on this course it’s easy for me to talk about a problem I’m having as we know each other and it’s not public.</li>
+            <li>When it comes to asking the wider group, I’ll try everything else first as I find this very uncomfortable. It’s a combination of generally having been the helper rather than the helpee, not wanting to seem stupid in front of others, and generally feeling uncomfortable with people I don’t know</li>
+          </ul>
+          <ul>Asking coaches for help
+            <li>I haven’t asked directly to the coaches separately - though usually when asking questions to discord I will receive answers from students as well as a coach. The above applies!</li>
+            <li>If it was one-on one with a coach (especially in person/having met them) I’d feel more comfortable but also more annoying..</li>
+          </ul>
+          <ul>Improving your process with reflection
+            <li>I could improve on this - I need to write things down more! I do think over things I’ve done and how I could do them better, but this goes totally out of my head when I get in a frustrated state. </li>
+          </ul>
+        <h3 class="heading3"> Reflect on a time you were reluctant to ask for help. Consider what made you reluctant to do so. What might you try differently next time?</h3>
+          <p>When I struggled with the console log. I was reluctant to ask for help the first time because it seemed so simple and like everyone else already knew what they were doing. I was thinking if I’d missed a whole section somewhere? Was there an instruction to read/watch this so we knew how to use it? This was also after midnight when I first considered asking - I ended up waiting till the morning.</p>
+          <p>Then, when I struggled to get the console log to actually have output, I didn’t want to ask for more help as I’d feel even worse about that!</p>
+          <p>Starting from very very little base knowledge I need to remind myself constantly that some others have experience and already know how some of this all works. I like to think I’d ask for help earlier, and for more of it, and will keep trying to push myself with this.</p>
+    </body>
+</html>
