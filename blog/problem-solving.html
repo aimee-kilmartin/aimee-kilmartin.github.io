@@ -19,12 +19,16 @@
         <h3 class="heading3">When I was blocked on a simple problem:</h3>
           <p>In the latest Javascript section, one of the tasks we needed to write code for was about manipulating objects (sets of information). This is set up where the code tests are already written - if the code does not produce the answer it is looking for the test will show as failed until the answer is correct. </p>
           <p>I was stuck on how to add the object for ‘ben’ to another object, terah, so as to have ben listed as one of her children - this appears as an object within an object.  I was trying to create a function that adds the children section to terah and then the ben object to the children section, and then write another section to add ben’s name - and just not getting anything working.</p>
-          <p></p>
-          <p>To problem solve this I did some ‘trying things’ - basically changing one thing to see what it did, changing another thing and so on. I also used google, but was ending up more and more confused the more information I looked at. </p>
-          <p>Then I took a step back and had a small break. I was doing this mid afternoon which is not my most functioning time - but I’d had work that morning so needed to use the afternoon hours for coursework. When I came back to it I rubber ducked through the whole file, and realised that If I created the ben object, I could then simply add the object to the already created terah’s children object just like I had with the earlier questions - and didn't need a complicated function or method to do so.</p>
+          <p class ="sub-header">8. Add a ben property to the value of the terah children property. ben should be an object with the key name and the value "Ben".
+            <p class = "code-inline">let ben = {
+             <br>name: 'Ben',
+            <br>}
+            terah.children.ben = ben</p>
+          <p>To problem solve this I did some <span class="da">trying things</span> - basically changing one thing to see what it did, changing another thing and so on. I also used <span class="da">google</span>, but was ending up more and more confused the more information I looked at. </p>
+          <p>Then I took a step back and had a small break. I was doing this mid afternoon which is not my most functioning time - but I’d had work that morning so needed to use the afternoon hours for coursework. When I came back to it I <span class="da">rubber ducked</span> through the whole file, and realised that If I created the ben object, I could then simply add the object to the already created terah’s children object just like I had with the earlier questions - and didn't need a complicated function or method to do so.</p>
           <p>Throughout this process I felt super frustrated and stressed!! I was over-complicating it and felt like it should be a simple solution but just wasn’t getting it. I struggle to put things down if they aren’t complete or right - so stepping away is hard. I felt pretty defeated by the time I took a break, but was determined to give it another shot before asking for help.</p>
           <p>When I got the test passing I felt a combination of relief and dumb - should’ve figured that out sooner, why didn’t I know that, how am I going to get through the rest of these if I can’t do this etc</p>
-          <p>Throughout this I learnt some valuable lessons. The most stand out of these are:
+          <p class ="sub-header">Throughout this I learnt some valuable lessons. The most stand out of these are:
             <ul>
               <li>Take into account what is already done/written - if it exists it doesn’t need to be recreated!</li>
               <li>Google can make things harder - search wisely</li>
@@ -33,46 +37,65 @@
             </ul>
           </p>
         <h3 class="heading3">When I elegantly solved a problem:</h3>
-          <p>On another task that got me stumped I handled it a bit better than the previous one. This task was called Fizzbuzz - I needed to take some numbers, and depending on what the number was divisible by return different words. I had the correct calculations for (divide by 3) and (divide by 5) however the test was not passing for (divisible by 3 and 5/divisible by 15). I had written them in this order as it is a default to go from smallest to largest.</p>
-          <p>To problem solve this I used the rubber ducky method and trying alternatives - both while breaking the problem into small chunks.</p>
-          <p>I talked it through to myself, and tried each piece of code individually (commenting out the other two and updating the else/if statements to just work on one piece at a time). I confirmed that each piece worked individually as it should. So why was the %15 not working?</p>
+          <p>On another task that got me stumped I handled it a bit better than the previous one. This task was called <span class="da">Fizzbuzz</span> - I needed to take some numbers, and depending on what the number was divisible by return different words. I had the correct calculations for <span class="da">(divide by 3)</span> and <span class="da">(divide by 5)</span> however the test was not passing for <span class="da">(divisible by 3 and 5/divisible by 15)</span>. I had written them in this order as it is a default to go from smallest to largest.</p>
+          <p class = "code-inline">export function fizzbuzz(numberParameter) {
+          <br>
+            <br>} if (numberParameter % 3 === 0) {
+          <br>return 'Fizz'
+          <br>} else if (numberParameter % 5 === 0) {
+          <br>return 'Buzz'
+         <br>Else if (numberParameter % 15 === 0) {
+            <br>return 'FizzBuzz'
+          <br>} else return numberParameter
+         <br>}
+         </p>
+          <p>To problem solve this I used the <span class="da">rubber ducky</span>rubber ducky method and <span class="da">trying alternatives</span> - both while breaking the problem into small chunks.</p>
+          <p>I talked it through to myself, and tried each piece of code individually (commenting out the other two and updating the else/if statements to just work on one piece at a time). I confirmed that each piece worked individually as it should. <strong>So why was the %15 not working?</strong></p>
           <p>I realised that by being the last piece of code, and because of the values involved any number that would be captured by that code would already have been captured by the first piece, %3, at which point the function is complete and further statements are not checked. Therefore it needed to be the first statement in this function.</p>
           <p>During this process I felt calm and logical. I worked through the code bit by bit and found a reason for the result I was getting. Even better,  I actually understood why that occurred without looking it up!</p>
-          <p>What I learnt from this is was the benefits of breaking it up and testing each piece individually. This can be vital in figuring out which part is wrong - in this case the parts were correct, just how I’d put them together caused the issue!</p>
+          <p><strong>What I learnt from this is was the benefits of breaking it up and testing each piece individually.</strong> This can be vital in figuring out which part is wrong - in this case the parts were correct, just how I’d put them together caused the issue!</p>
           <p>I realised that just the order of statements can have a big impact on the result and how that happens. That just because an instruction or example might not look like the order is important, or I don’t understand why it’s in that order in the first instance, to trust the process.</p>
-          <p></p>
+          <p></p><span class="da"></span>
         <h3 class="heading3">How confident you feel using each of these problem-solving techniques/processes:</h3>
-          <ul>Pseudocode
+        <p class="list-header">Pseudocode</p>  
+        <ul>
             <li>Semi - I like this but need to learn to do it where the actual code is</li>
             <li>I also need practice in the order of steps and what each type of step should be - variable, function etc</li>
           </ul>
-          <ul>Trying something
+          <p class="list-header">Trying something</p>  
+          <ul>
             <li>I do this a lot - it is my default along with google. I don’t feel ‘stuck’ until I’ve run out of ideas, and will try new thing after new thing for way too long.</li>
           </ul>
-          <ul>Rubber ducky method
+          <p class="list-header">Rubber ducky method</p>  
+          <ul>
             <li>I like this method but tend to avoid saying out loud if people are around but I’m not actually speaking to them directly. I’ll do it in my head which probably doesn’t work as effectively</li>
           </ul>
-          <ul>Reading error messages
+          <p class="list-header">Reading error messages</p>  
+          <ul>
             <li>Yes if the error message gives some information on where to start looking for my error. ‘Undefined’ is a tough one but I learned that if ‘.push’ is undefined it was because the value before .push was undefined - not the .push itself</li>
             <li>Sometimes I was basing my code off an example I’d found and had error messages like ‘expected ;’. The test doesn’t give a place in the code for this, but it does show up in VS Code. It was asking me to change => to ; several times and I still don’t know why!</li>
           </ul>
-          <ul>Console.logging
+          <p class="list-header">Console.logging</p>  
+          <ul>
             <li>I struggled with this. I asked in discord how to actually see a result of console.log when working with just a javascript file - I could see that others were using it, but I didn’t know how. Research got me trying to use node which I knew we had installed but  1- needed to be quit every time to check the test, quit the test go back to node etc and 2 - just got a bunch of error messages that I didn't understand.</li>
             <li>After I’d gotten help on where console log printed to, I found it just as hard sometimes to get console log to print something, than it was to fix the code until the test passed. It was useful for some tasks but most of the time I wasn’t getting it to work effectively.</li>
           </ul>
-          <ul>Googling
+          <p class="list-header">Googling</p>  
+          <ul>
             <li>I do a lot of this. It’s one of my first go to’s after I’ve tried a few ideas just from my head, but getting the right information isn’t always easy. It’s often in simple blocks just with let or const statements that I struggle to convert the idea to the function I’m doing. I eventually get there but it takes some time.</li>
-            <li></li>
           </ul>
-          <ul>Asking your peers for help
+          <p class="list-header">Asking your peers for help</p>  
+          <ul>
             <li>I have two parts to this - having my cousin on this course it’s easy for me to talk about a problem I’m having as we know each other and it’s not public.</li>
             <li>When it comes to asking the wider group, I’ll try everything else first as I find this very uncomfortable. It’s a combination of generally having been the helper rather than the helpee, not wanting to seem stupid in front of others, and generally feeling uncomfortable with people I don’t know</li>
           </ul>
-          <ul>Asking coaches for help
+          <p class="list-header">Asking coaches for help</p>  
+          <ul>
             <li>I haven’t asked directly to the coaches separately - though usually when asking questions to discord I will receive answers from students as well as a coach. The above applies!</li>
             <li>If it was one-on one with a coach (especially in person/having met them) I’d feel more comfortable but also more annoying..</li>
           </ul>
-          <ul>Improving your process with reflection
+          <p class="list-header">Improving your process with reflection</p>  
+          <ul>
             <li>I could improve on this - I need to write things down more! I do think over things I’ve done and how I could do them better, but this goes totally out of my head when I get in a frustrated state. </li>
           </ul>
         <h3 class="heading3"> Reflect on a time you were reluctant to ask for help. Consider what made you reluctant to do so. What might you try differently next time?</h3>
